@@ -6,7 +6,7 @@ format:
     toc: true
 editor: source
 
-bibliography: references.bib
+bibliography: reports/references.bib
 ---
 
 ```{r}
@@ -34,7 +34,7 @@ knitr @knitr, tidyverse @tidyverse, and Quarto @Allaire_Quarto_2022.
 
 ## Results
 
-![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-horse}
+![Horse populations for all provinces in Canada from 1906 - 1972.](results/horse_pops_plot.png){#fig-horse}
 
 
 We can see from @fig-horse that Ontario, Saskatchewan and Alberta 
@@ -53,7 +53,7 @@ We present the standard deviations in Table 1.
 
 ```{r}
 #| include: false
-horses_sd_table <- read_csv("../results/horses_sd.csv")
+horses_sd_table <- read_csv("results/horses_sd.csv")
 ```
 
 ```{r}
@@ -70,7 +70,7 @@ $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
 Additionally, note that in @tbl-std we consider the sample standard deviation of the number of horses during the same time span as @fig-horse.
 
-![Horse populations for the province with the largest standard deviation](../results/horse_pop_plot_largest_sd.png){#fig-pop width=60%}
+![Horse populations for the province with the largest standard deviation](results/horse_pop_plot_largest_sd.png){#fig-pop width=60%}
 
 
 In @fig-pop we zoom in and look at the province of `{r} largest_sd`, which had the largest spread of values in terms of standard deviation.
